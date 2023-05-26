@@ -14,8 +14,23 @@
 body {
     font-family: 'Lato', sans-serif;
     line-height: 1.2;
-    background-color: #fbfbfb;
-    color: #0f0f0f;
+    /*background-color: #fbfbfb;*/
+    /*color: #0f0f0f;*/
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 
@@ -66,6 +81,7 @@ a {
 h1 {
     font-size: 36px;
     text-align: center;
+    text-shadow: 2px 3px 4px #202020;
 }
 
 h2 {
